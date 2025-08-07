@@ -14,6 +14,7 @@
 </head>
 <body>
   <header>
+    <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
     <div class="container">
       <h1><a href="index.html" class="logo">Cultura Nipônica</a></h1>
       <nav>
@@ -28,7 +29,6 @@
     </div>
   </header>
 
-  <button id="menu-toggle" aria-label="Abrir menu">&#9776;</button>
 
 
   <section class="hero">
@@ -40,15 +40,15 @@
 
   <section class="destaques">
     <div class="container">
-      <div class="card">
+      <div class="card fade-in">
         <h3>História do Japão</h3>
         <p>Uma jornada milenar que mistura mitos, imperadores e transformações sociais.</p>
       </div>
-      <div class="card">
+      <div class="card fade-in">
         <h3>Tradições & Festivais</h3>
         <p>Cerimônias, espiritualidade e festas populares que encantam gerações.</p>
       </div>
-      <div class="card">
+      <div class="card fade-in">
         <h3>Culinária Japonesa</h3>
         <p>Sabores únicos, preparo delicado e pratos que são verdadeiras obras de arte.</p>
       </div>
@@ -56,11 +56,13 @@
   </section>
 
   <footer>
-    <div class="container">
+    <div class="container fade-in">
       <p>&copy; 2025 Cultura Nipônica — Todos os direitos reservados.</p>
     </div>
   </footer>
 
   <script src="../script/loadBanner.js"></script>
+  <script src="./script/fadeIn.js"></script>
+
 </body>
 </html>
