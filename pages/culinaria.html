@@ -4,24 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Culinária Japonesa - Cultura Nipônica</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Cultura Nipônica</h1>
+      <h1><a href="../index.html" class="logo">Cultura Nipônica</a></h1>
       <nav>
         <ul>
-          <li><a href="index.html">Início</a></li>
+          <li><a href="../index.html">Início</a></li>
           <li><a href="historia.html">História</a></li>
           <li><a href="tradicoes.html">Tradições</a></li>
-          <li><a href="culinaria.html">Culinária</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="culinaria.html" class="active">Culinária</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <div id="banner-container"></div>
 
   <main class="container">
     <h2>Culinária Japonesa</h2>
@@ -47,5 +49,7 @@
       <p>&copy; 2025 Cultura Nipônica — Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <script src="../scripts/loadBanner.js"></script>
 </body>
 </html>
