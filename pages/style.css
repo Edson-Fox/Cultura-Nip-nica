@@ -1,0 +1,112 @@
+/* Fontes e cores base */
+body {
+  font-family: 'Noto Serif JP', serif;
+  margin: 0;
+  background-color: #fefbf4;
+  color: #2b2b2b;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho e menu */
+header {
+  background-color: #e3cba5;
+  padding: 15px 0;
+  border-bottom: 2px solid #b78956;
+}
+
+.logo {
+  text-decoration: none;
+  color: #44260e;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #44260e;
+  font-weight: 600;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #b78956;
+}
+
+nav a.active {
+  color: #8c6239;
+  border-bottom: 2px solid #8c6239;
+  padding-bottom: 2px;
+}
+
+/* Hero / Banner */
+.hero {
+  position: relative;
+  background-image: url('../assets/img/Torii-ao-Pôr-do-Sol.png'); /* ajuste o nome da imagem conforme necessário */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Seção de destaques */
+.destaques {
+  padding: 50px 0;
+  background-color: #fff7e7;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #f2e6d0;
+  border: 1px solid #d8b383;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6b3e1e;
+}
+
+/* Rodapé */
+footer {
+  background-color: #d2b48c;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #3b2a1a;
+}
