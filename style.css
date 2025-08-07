@@ -57,7 +57,7 @@ nav a.active {
 /* Hero / Banner */
 .hero {
   position: relative;
-  background-image: url('../assets/img/torii-por-do-sol.png'); /* caminho ajustado */
+  background-image: url('assets/img/Torii-ao-Pôr-do-Sol.png'); /* caminho ajustado */
   background-size: cover;
   background-position: center;
   color: white;
