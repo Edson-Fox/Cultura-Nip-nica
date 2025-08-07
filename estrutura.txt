@@ -1,17 +1,24 @@
 Listagem de caminhos de pasta
 O número de série do volume é 108D-5AF1
 C:.
+|   .gitattributes
 |   estrutura.txt
 |   index.html
 |   style.css
 |   
 +---assets
 |   \---img
-|           Torii ao Pôr do Sol.png
+|           Torii-ao-Pôr-do-Sol.png
 |           
-\---pages
-        contato.html
-        culinaria.html
-        historia.html
-        tradicoes.html
++---component
+|       banner.html
+|       
++---pages
+|       contato.html
+|       culinaria.html
+|       historia.html
+|       tradicoes.html
+|       
+\---script
+        loadBanner.js
         

@@ -1,9 +1,27 @@
 /* Fontes e cores base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Serif JP', serif; /* sua fonte */
+}
+
+body > *:not(script) {
+  flex-shrink: 0;
+}
+
+main.container {
+  flex: 1; /* Expande para ocupar o espaço disponível */
+}
+
 body {
   font-family: 'Noto Serif JP', serif;
   margin: 0;
   background-color: #fefbf4;
   color: #2b2b2b;
+  padding-top: 70px; /* altura do header para evitar sobreposição */
 }
 
 .container {
@@ -14,8 +32,11 @@ body {
 
 /* Cabeçalho e menu */
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #e3cba5;
-  padding: 15px 0;
   border-bottom: 2px solid #b78956;
 }
 
@@ -180,4 +201,51 @@ footer {
 
 .form-contato button:hover {
   background-color: #b78956;
+}
+
+nav a {
+  transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+  color: #b78956;
+  border-bottom-color: #b78956;
+}
+
+.card {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(183, 137, 86, 0.5);
+  transform: translateY(-5px);
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #44260e;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #e3cba5;
+    position: absolute;
+    top: 60px; /* ajuste conforme header */
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 10px 0;
+  }
+  nav ul.open {
+    display: flex;
+  }
+  #menu-toggle {
+    display: block;
+  }
 }
